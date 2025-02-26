@@ -22,6 +22,9 @@
 \input{glyphtounicode}
 
 \usepackage[sfdefault]{raleway}
+% Try to use alternative font since raleway.sty is not available
+% \usepackage{helvet}
+% \renewcommand{\familydefault}{\sfdefault}
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
@@ -116,7 +119,7 @@
   \vspace{2pt}
   \resumeSubHeadingListStart
     \small{\item{
-        \textbf{AI/ML:}{ PyTorch, Computer Vision, CNN, LLM, U-Net, Attention Mechanisms, ResNet, OpenCV, Scikit-image } \\
+        \textbf{AI/ML:}{ PyTorch, Computer Vision, CNN, LLM, U-Net, Transformer, ResNet, OpenCV, Scikit-image } \\
         \vspace{3pt}
         \textbf{Programming:}{ Python, C/C++, MATLAB, JavaScript, SQL } \\ 
         \vspace{3pt}
@@ -131,16 +134,7 @@
 \section{AI Projects \& Research}
   \vspace{3pt}
   \resumeSubHeadingListStart
-    \resumeDoubleHeading
-      {Cell Segmentation and Mitotic Stage Classification Pipeline}{Fall 2024}
-        \resumeItemListStart
-            \resumeItem{Implemented ensemble segmentation workflow combining DBSCAN clustering and watershed algorithms}
-            \resumeItem{Trained CNN model with ResNet50 architecture achieving 90\% accuracy in mitotic stage classification}
-            \resumeItem{Implemented attention mechanisms to focus on morphological changes during cell division}
-            \resumeItem{Developed feature extraction pipeline for 15+ cell morphology metrics including texture, shape, and intensity}
-        \resumeItemListEnd
-  
-    \resumeDoubleHeading
+    \resumeSubheading
       {Material Database Development with LLM}{Fall 2024 - Spring 2025}
         \resumeItemListStart
             \resumeItem{Benchmarked GPT-4 and Claude models for automated tabular data extraction from scientific literature}
@@ -149,17 +143,26 @@
             \resumeItem{Created synthetic graph generator for training specialized plot digitization models}
         \resumeItemListEnd
         
-    \resumeDoubleHeading
-      {Scanning Track Topology Analysis of Laser Power Bed Fusion}{Spring 2024}
+    \resumeSubheading
+      {Scanning Track Topology Analysis of Laser Power Bed Fusion}{Fall 2024 - Spring 2025}
         \resumeItemListStart
             \resumeItem{Developed signal processing algorithms for analyzing scanning track continuity in additive manufacturing}
             \resumeItem{Implemented modified A* algorithm for valley point linking to detect track separation boundaries}
             \resumeItem{Applied D8 terrain analysis algorithms to model surface topology, achieving 94\% track detection accuracy}
             \resumeItem{Created interactive 3D visualization using Three.js for improved data interpretation and analysis}
         \resumeItemListEnd
+        
+    \resumeSubheading
+      {Cell Segmentation and Mitotic Stage Classification Pipeline}{Fall 2024}
+        \resumeItemListStart
+            \resumeItem{Implemented ensemble segmentation workflow combining DBSCAN clustering and watershed algorithms}
+            \resumeItem{Trained CNN model with ResNet50 architecture achieving 90\% accuracy in mitotic stage classification}
+            \resumeItem{Implemented attention mechanisms to focus on morphological changes during cell division}
+            \resumeItem{Developed feature extraction pipeline for 15+ cell morphology metrics including texture, shape, and intensity}
+        \resumeItemListEnd
       
-    \resumeDoubleHeading
-      {Surface Analysis of Laser Power Bed Fusion}{Fall 2023 - Spring 2025}
+    \resumeSubheading
+      {Surface Analysis of Laser Power Bed Fusion}{Fall 2023 - Spring 2024}
         \resumeItemListStart
             \resumeItem{Trained U-Net segmentation model on manually annotated frames for automated feature identification}
             \resumeItem{Applied convolutional filters (DoG, LoG) and morphological operations to enhance wave pattern recognition}
