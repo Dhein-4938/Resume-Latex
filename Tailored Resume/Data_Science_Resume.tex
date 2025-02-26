@@ -49,7 +49,7 @@
 
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{-0pt}}
   }
 }
 
@@ -121,9 +121,13 @@
     \small{\item{
         \textbf{Data Analysis:}{ NumPy, Pandas, Matplotlib, Seaborn, scikit-learn, SQL, Data Processing, Statistical Analysis} \\ 
         \vspace{3pt}
-        \textbf{Programming:}{ Python, C/C++, MATLAB, JavaScript, SQL} \\ 
+        \textbf{Machine Learning:}{ Classification, Regression, Clustering, Dimensionality Reduction, Feature Engineering, Ensemble Methods} \\ 
         \vspace{3pt}
-        \textbf{AI/ML:}{ PyTorch, Computer Vision, CNN, LLM, OpenCV, Feature Engineering } \\
+        \textbf{Deep Learning:}{ PyTorch, CNNs, Attention Mechanisms, Fine-tuning, Prompt Engineering, Model Optimization} \\
+        \vspace{3pt}
+        \textbf{Computer Vision:}{ OpenCV, scikit-image, Image Processing, Object Detection, Feature Extraction} \\
+        \vspace{3pt}
+        \textbf{Programming:}{ Python, C/C++, MATLAB, JavaScript, SQL} \\ 
         \vspace{3pt}
         \textbf{Tools:}{ Git, Docker, AWS, GCP, Qt, LaTeX } \\
     }}
@@ -133,40 +137,37 @@
 
 \section{Data Analysis Projects \& Research}
   \resumeSubHeadingListStart
-    \resumeSubheading
-      {Material Database Development with LLM}{Fall 2024 - Spring 2025}
-        \resumeItemListStart
-            \resumeItem{Developed pipeline to scrape DOIs and retrieve full-text papers via Elsevier and Crossref APIs}
-            \resumeItem{Benchmarked GPT-4 and Claude models for automated tabular data extraction from scientific literature}
-            \resumeItem{Implemented LaTeX conversion for precise numerical representation in extracted data}
-            \resumeItem{Designed verification system comparing extracted data with original sources, achieving 92\% accuracy}
-        \resumeItemListEnd
-        
-    \resumeSubheading
-      {Scanning Track Topology Analysis of Laser Power Bed Fusion}{Spring 2024}
+\resumeSubheading
+      {Scanning Track Topology Analysis of Laser Power Bed Fusion}{Jan 2025 \textbf{--} Present}
         \resumeItemListStart
             \resumeItem{Developed signal processing algorithms for analyzing scanning track continuity in additive manufacturing}
             \resumeItem{Implemented modified A* algorithm for valley point linking to detect track separation boundaries}
             \resumeItem{Created interactive 3D visualization using Three.js for improved data interpretation and analysis}
-            \resumeItem{Developed quantitative metrics for track quality assessment based on topology measurements}
         \resumeItemListEnd
-    
+        
+    \resumeSubheading
+      {Material Database Development with LLM}{Oct 2024 \textbf{--} Present}
+        \resumeItemListStart
+            \resumeItem{Developed pipeline to scrape DOIs and retrieve full-text papers via Elsevier and Crossref APIs}
+            \resumeItem{Benchmarked GPT-4 and Claude models for automated tabular data extraction from scientific literature}
+            \resumeItem{Implemented zero-shot and few-shot prompting techniques to enhance data extraction accuracy by 37\%}
+            \resumeItem{Designed cross-model verification system comparing extracted data and the original sources}
+        \resumeItemListEnd
+        
     \resumeSubheading
       {Cell Segmentation and Mitotic Stage Classification}{Fall 2024}
         \resumeItemListStart
-            \resumeItem{Extracted 15+ morphological features per cell including texture, shape, and intensity metrics}
-            \resumeItem{Applied dimensionality reduction techniques to identify key features for classification}
-            \resumeItem{Built statistical models to correlate cell morphology with mitotic stage progression}
-            \resumeItem{Created end-to-end pipeline from raw microscopy images to classified cells with interactive visualization}
+            \resumeItem{Extracted 20+ morphological features per cell using scikit-image and custom feature engineering}
+            \resumeItem{Applied PCA and t-SNE for dimensionality reduction to identify feature clusters correlated with cell states}
+            \resumeItem{Built ensemble model combining feature-based classifiers with deep learning approaches for robust classification}
         \resumeItemListEnd
       
     \resumeSubheading
-      {Surface Analysis of Laser Power Bed Fusion}{Fall 2023 - Spring 2025}
+      {Video Surface Analysis of Laser Power Bed Fusion}{Aug 2023 \textbf{--} Dec 2024}
         \resumeItemListStart
-            \resumeItem{Automated file organization and processing to standardize video and measurement data}
-            \resumeItem{Developed correlation model between processing parameters and surface waveform features}
-            \resumeItem{Applied convolutional filters and morphological operations to enhance pattern recognition}
-            \resumeItem{Created quantitative metrics for surface quality assessment from image data}
+            \resumeItem{Developed data pipeline for processing analyze high-speed video data}
+            \resumeItem{Created custom feature extraction algorithms for identifying surface wave patterns in noisy video data}
+            \resumeItem{Implemented automated feature tracking across sequential frames to analyze temporal pattern evolution}
         \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -178,10 +179,10 @@
       {ASML}{Wilton, CT}
       {Optics Metrology Production Engineer}{May 2024 \textbf{--} Aug 2024, Internship}
         \resumeItemListStart
-            \resumeItem{Constructed data visualizer for raw spectrophotometer data with GUI using Python and MATLAB}
-            \resumeItem{Optimized measurement path for white light interferometer, reducing 86\% of stage traveling distance}
-            \resumeItem{Analyzed lithography pattern defect data to develop classification model with over 90\% accuracy}
-            \resumeItem{Quantified the effectiveness of adhesion promoters through statistical analysis of thermal stress tests}
+            \resumeItem{Constructed data visualizer for raw spectrophotometer data with interactive GUI using Python and MATLAB}
+            \resumeItem{Optimized measurement path algorithm for white light interferometer, reducing 86\% of stage traveling distance}
+            \resumeItem{Applied ML classification techniques to lithography pattern defect data, achieving 90\% accuracy}
+            \resumeItem{Conducted statistical analysis for epoxy interface performance under thermal stress conditions}
         \resumeItemListEnd
   \resumeSubHeadingListEnd
 
