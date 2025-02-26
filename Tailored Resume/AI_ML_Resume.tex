@@ -49,7 +49,7 @@
 
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{-1pt}}
   }
 }
 
@@ -116,55 +116,59 @@
   \vspace{2pt}
   \resumeSubHeadingListStart
     \small{\item{
-        \textbf{AI/ML:}{ PyTorch, Computer Vision, CNN, LLM, U-Net, Transformer, ResNet, OpenCV, Scikit-image } \\
+        \textbf{Deep Learning:}{ PyTorch, CNN, Transformer, U-Net, ResNet, Attention Mechanisms, Transfer Learning} \\
         \vspace{3pt}
-        \textbf{Programming:}{ Python, C/C++, MATLAB, JavaScript, SQL } \\ 
+        \textbf{Computer Vision:}{ Image Segmentation, Feature Detection, OpenCV, scikit-image, Object Detection} \\
         \vspace{3pt}
-        \textbf{Data Processing:}{ NumPy, Pandas, Matplotlib, Seaborn, scikit-learn } \\ 
+        \textbf{NLP \& LLMs:}{ Prompt Engineering, Zero/Few-shot Learning, Chain-of-Thought, LLM Fine-tuning} \\
         \vspace{3pt}
-        \textbf{Tools:}{ Git, Docker, AWS, GCP, Qt, LaTeX } \\
+        \textbf{Data Processing:}{ NumPy, Pandas, Matplotlib, Seaborn, scikit-learn, Feature Engineering} \\ 
+        \vspace{3pt}
+        \textbf{Programming:}{ Python, C/C++, MATLAB, JavaScript, SQL, RESTful APIs } \\ 
+        \vspace{3pt}
+        \textbf{Tools:}{ Git, Docker, AWS, GCP, Jupyter, LaTeX } \\
     }}
   \resumeSubHeadingListEnd
 
-%----------- AI PROJECTS -----------
+%----------- AI Projects \& Research -----------
 
 \section{AI Projects \& Research}
   \vspace{3pt}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Material Database Development with LLM}{Fall 2024 - Spring 2025}
+      {Material Database Development with LLM}{Oct 2024 \textbf{--} Present}
         \resumeItemListStart
-            \resumeItem{Benchmarked GPT-4 and Claude models for automated tabular data extraction from scientific literature}
-            \resumeItem{Implemented zero-shot and few-shot prompting techniques to enhance graph data extraction accuracy by 37\%}
-            \resumeItem{Developed chain-of-thought prompting system for accurate graph digitization from scientific literature}
-            \resumeItem{Created synthetic graph generator for training specialized plot digitization models}
+            \resumeItem{Benchmarked GPT-4 and Claude models for scientific data extraction, creating comprehensive performance metrics}
+            \resumeItem{Developed specialized prompt templates achieving 37\% accuracy improvement in graph data extraction}
+            \resumeItem{Engineered chain-of-thought prompting system enabling LLMs to explain their reasoning during extraction}
+            \resumeItem{Created synthetic scientific graph generator with configurable parameters for training specialized models}
+            \resumeItem{Implemented validation framework to compare extracted numerical data with source documents}
         \resumeItemListEnd
-        
+
     \resumeSubheading
-      {Scanning Track Topology Analysis of Laser Power Bed Fusion}{Fall 2024 - Spring 2025}
+      {Scanning Track Topology Analysis of Laser Power Bed Fusion}{Jan 2025 \textbf{--} Present}
         \resumeItemListStart
-            \resumeItem{Developed signal processing algorithms for analyzing scanning track continuity in additive manufacturing}
-            \resumeItem{Implemented modified A* algorithm for valley point linking to detect track separation boundaries}
-            \resumeItem{Applied D8 terrain analysis algorithms to model surface topology, achieving 94\% track detection accuracy}
-            \resumeItem{Created interactive 3D visualization using Three.js for improved data interpretation and analysis}
+            \resumeItem{Developed custom signal processing algorithms for analyzing multi-dimensional topology data}
+            \resumeItem{Implemented pathfinding algorithms optimized for noisy terrain data with outlier handling}
+            \resumeItem{Engineered terrain analysis system based on geospatial algorithms adapted for micro-scale features}
+            \resumeItem{Created interactive 3D visualization with dynamic parameter adjustment capabilities using Three.js}
         \resumeItemListEnd
         
     \resumeSubheading
       {Cell Segmentation and Mitotic Stage Classification Pipeline}{Fall 2024}
         \resumeItemListStart
-            \resumeItem{Implemented ensemble segmentation workflow combining DBSCAN clustering and watershed algorithms}
-            \resumeItem{Trained CNN model with ResNet50 architecture achieving 90\% accuracy in mitotic stage classification}
-            \resumeItem{Implemented attention mechanisms to focus on morphological changes during cell division}
-            \resumeItem{Developed feature extraction pipeline for 15+ cell morphology metrics including texture, shape, and intensity}
+            \resumeItem{Designed ensemble segmentation approach combining traditional algorithms with deep learning techniques}
+            \resumeItem{Trained CNN model with custom ResNet50 architecture optimized for cellular morphology detection}
+            \resumeItem{Implemented self-attention mechanisms to highlight critical cellular regions during mitotic transitions}
+            \resumeItem{Created feature extraction pipeline quantifying 20+ cellular metrics with specialized preprocessing steps}
         \resumeItemListEnd
-      
+        
     \resumeSubheading
-      {Surface Analysis of Laser Power Bed Fusion}{Fall 2023 - Spring 2024}
+      {Video Surface Analysis of Laser Power Bed Fusion}{Aug 2023 \textbf{--} Dec 2024}
         \resumeItemListStart
-            \resumeItem{Trained U-Net segmentation model on manually annotated frames for automated feature identification}
-            \resumeItem{Applied convolutional filters (DoG, LoG) and morphological operations to enhance wave pattern recognition}
-            \resumeItem{Compared multiple edge detection algorithms (Canny, Sobel, Farid) for optimal waveform feature extraction}
-            \resumeItem{Developed automated video preprocessing workflow with adaptive contrast and surface detection techniques}
+            \resumeItem{Trained U-Net segmentation architecture with encoder-decoder modifications for optimal feature extraction}
+            \resumeItem{Developed comprehensive convolutional filter pipeline with automated parameter optimization}
+            \resumeItem{Designed transfer learning approach to adapt pre-trained models to specialized materials science domain}
         \resumeItemListEnd
   
   \resumeSubHeadingListEnd
@@ -178,10 +182,12 @@
       {ASML}{Wilton, CT}
       {Optics Metrology Production Engineer}{May 2024 \textbf{--} Aug 2024, Internship}
         \resumeItemListStart
-            \resumeItem{Designed and developed lithography patterned defect detection and classification with over 90\% accuracy}
-            \resumeItem{Optimized measurement path for white light interferometer, reducing 86\% of stage traveling distance}
-            \resumeItem{Constructed data visualizer for raw spectrophotometer data with GUI using Python and MATLAB}
+            \resumeItem{Designed and implemented CNN-based defect classification system for lithography patterns with 90\% accuracy}
+            \resumeItem{Developed computer vision pipeline integrating thresholding, edge detection, and morphological operations}
+            \resumeItem{Optimized measurement path using graph traversal algorithms, reducing travel distance by 86\%}
+            \resumeItem{Created interactive data visualization system with customizable filtering and analysis capabilities}
         \resumeItemListEnd
   \resumeSubHeadingListEnd
+
 
 \end{document}
