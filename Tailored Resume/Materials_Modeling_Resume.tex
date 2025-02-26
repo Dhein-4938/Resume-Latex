@@ -38,7 +38,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-6pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -58,17 +58,17 @@
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
         \textbf{#1} & #2 \\
         \textit{\small#3} & {\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-6pt}
 }
 
 \newcommand{\resumeSubheading}[2]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & {\small #2} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-6pt}
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-6pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
@@ -97,7 +97,6 @@
 %----------- EDUCATION -----------
 
 \section{Education}
-\vspace{3pt}
 \resumeSubHeadingListStart
     \resumeDoubleHeading
       {Carnegie Mellon University \textnormal{\small GPA: 4.00/4.00}}{Pittsburgh, PA}
@@ -109,19 +108,18 @@
       {National Yang Ming Chiao Tung University  \textnormal{\small GPA: 3.94/4.00}}{Hsinchu, Taiwan}
       {Bachelor of Science in Materials Science and Engineering}{June 2022}
     \resumeSubHeadingListStart
-        \resumeItem{Relevant Courses: Thermodynamics of Materials, Physical Metallurgy, Introduction to Crystallography and Diffraction, Defects in Crystals, Quantum Mechanics, Plasma Engineering and Application, Thermodynamics of Solid}
+        \resumeItem{Relevant Courses: Thermodynamics, Physical Metallurgy, Crystallography and Diffraction, Crystals Defects, Quantum Mechanics, Plasma Engineering and Application, Solid Thermodynamics }
     \resumeSubHeadingListEnd   
 \resumeSubHeadingListEnd
 
 %----------- SKILLS -----------
 
 \section{Skills}
-  \vspace{2pt}
   \resumeSubHeadingListStart
     \small{\item{
-        \textbf{Materials Science:}{ Atomistic Modeling, Additive Manufacturing, Thermodynamics, Crystallography, Material Characterization, Phase Transformations} \\ 
+        \textbf{Materials Science:}{ Atomistic Modeling, Thermodynamics, Crystallography, Characterization, Phase Transforms} \\ 
         \vspace{3pt}
-        \textbf{Computational Methods:}{ Finite Element Analysis, Molecular Dynamics, Statistical Analysis, Signal Processing, Image Analysis} \\
+        \textbf{Computational Methods:}{ Molecular Dynamics, Kinetic Monte Carlo, Phase field, Finite Element Analysis} \\
         \vspace{3pt}
         \textbf{Programming:}{ Python, MATLAB, C/C++ } \\ 
         \vspace{3pt}
@@ -138,20 +136,26 @@
   \resumeSubHeadingListStart
     \resumeDoubleHeading
     {Carnegie Mellon University}{Pittsburgh, PA}
-    {Scanning Track Topology Analysis of Laser Power Bed Fusion} {Spring 2024}
+    {Scanning Track Topology Analysis of Laser Power Bed Fusion} {Jan 2025 - Present}
         \resumeItemListStart
             \resumeItem{Developed signal processing algorithms for analyzing scanning track continuity in additive manufacturing}
             \resumeItem{Applied D8 terrain analysis algorithms to model surface topology, achieving 94\% track detection accuracy}
             \resumeItem{Created interactive 3D visualization for topographical analysis of solidified melt pools}
             \resumeItem{Correlated processing parameters with track morphology and surface quality metrics}
         \resumeItemListEnd
+        
+    \resumeSubheading
+    {Material Database Development with LLM}{Oct 2024 - Present}
+        \resumeItemListStart
+          \resumeItem{Developed AI pipeline to extract and verify materials property data from scientific literature}
+          \resumeItem{Created database system for storing materials data with LaTeX formatting and metadata preservation}
+        \resumeItemListEnd
     
-    \resumeSubheading{Surface Analysis of Laser Power Bed Fusion}{Fall 2023 - Spring 2025}
+    \resumeSubheading{Surface Analysis of Laser Power Bed Fusion}{Aug 2023 - Dec 2024}
         \resumeItemListStart
             \resumeItem{Developed correlation models between laser processing parameters and surface waveform features}
-            \resumeItem{Analyzed surface feature evolution under varying thermal conditions during solidification}
+            \resumeItem{Analyzed surface feature evolution under varying thermal conditions during solidification and characterized surface morphology evolution using image processing techniques}
             \resumeItem{Quantified bead-up effect influence on final part surface quality and dimensional accuracy}
-            \resumeItem{Applied image processing techniques to characterize surface morphology evolution}
         \resumeItemListEnd
         
     \resumeDoubleHeading{National Yang Ming Chiao Tung University}{Hsinchu, Taiwan}
@@ -160,30 +164,14 @@
             \resumeItem{Developed 3D ferromagnetic/antiferromagnetic resistive switching model to analyze filament formation}
             \resumeItem{Quantified interface exchange coupling effects on magnetic hysteresis loops and switching behavior}
             \resumeItem{Correlated oxide filament geometry with exchange bias field strength for memory device optimization}
-            \resumeItem{Demonstrated voltage-controlled manipulation of magnetic properties for low-power spintronic applications}
         \resumeItemListEnd
     
     \resumeSubheading{Magnetic Memory Device Dynamics Modeling}{Sept 2019 - Jul 2022}
         \resumeItemListStart
-            \resumeItem{Analyzed the atomistic dynamic spin interactions at interfaces for state transitions}
-            \resumeItem{Modeled spin transport mechanisms in magnetic multilayer structures}
-            \resumeItem{Simulated exchange bias effects at ferromagnetic/antiferromagnetic interfaces}
+            \resumeItem{Simulated exchange bias effects and coupling phenomena at  ferromagnetic/antiferromagnetic interfaces}
+            \resumeItem{Analyzed atomistic dynamic spin interactions and transport mechanisms at FM/AFM interfaces for state transitions in magnetic multilayer structures}
         \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-%----------- Research -----------
-
-\section{Material Database Development}
-  \resumeSubHeadingListStart
-    \resumeDoubleHeading
-    {Carnegie Mellon University}{Pittsburgh, PA}
-    {Material Database Development with LLM}{Fall 2024 - Spring 2025}
-        \resumeItemListStart
-            \resumeItem{Developed pipeline to extract materials property data from scientific literature using AI}
-            \resumeItem{Created verification systems comparing extracted data with original sources}
-            \resumeItem{Implemented LaTeX conversion for preserving numerical precision in materials property data}
-            \resumeItem{Designed database schema for storing and retrieving materials property data with proper metadata}
-        \resumeItemListEnd
+        
   \resumeSubHeadingListEnd
 
 %----------- EXPERIENCE -----------
