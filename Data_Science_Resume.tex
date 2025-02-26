@@ -1,0 +1,188 @@
+%-------------------------
+% Resume in Latex
+% Author : Hung-Yi Lin
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+\usepackage[sfdefault]{raleway}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeDoubleHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & {\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+    \textbf{\Huge \scshape Hung-Yi Lin} \\ \vspace{3pt}
+    \small
+    \faMobile \hspace{.5pt} \href{tel:14127427070}{+1 412 742 7070}
+    $|$
+    \faAt \hspace{.5pt} \href{mailto:hungyilin1@gmail.com}{hungyilin1@gmail.com}
+    $|$
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/hungyil}{linkedin.com/in/hungyil}
+    $|$
+    \faGithub \hspace{.5pt} \href{https://github.com/Dhein-4938}{github.com/Dhein-4938}
+\end{center}
+
+
+%----------- EDUCATION -----------
+
+\section{Education}
+\vspace{3pt}
+\resumeSubHeadingListStart
+    \resumeDoubleHeading
+      {Carnegie Mellon University \textnormal{\small GPA: 4.00/4.00}}{Pittsburgh, PA}
+      {Master of Science in Artificial Intelligence Engineering - Materials Science and Engineering}{December 2024}
+    \resumeSubHeadingListStart
+        \resumeItem{Relevant Courses: Systems and Tool Chains for AI Engineers, Methods of Computational Materials Science, AIML for Engineers, Computer Vision, Bioimage Informatics}
+    \resumeSubHeadingListEnd
+    \resumeDoubleHeading
+      {National Yang Ming Chiao Tung University  \textnormal{\small GPA: 3.94/4.00}}{Hsinchu, Taiwan}
+      {Bachelor of Science in Materials Science and Engineering}{June 2022}
+    \resumeSubHeadingListStart
+        \resumeItem{Relevant Courses: Data Structures and Object-oriented Programming, Linear Algebra, Discrete Mathematics}
+    \resumeSubHeadingListEnd   
+\resumeSubHeadingListEnd
+
+%----------- SKILLS -----------
+
+\section{Skills}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Data Analysis:}{ NumPy, Pandas, Matplotlib, Seaborn, scikit-learn, SQL, Data Processing, Statistical Analysis} \\ 
+        \vspace{3pt}
+        \textbf{Programming:}{ Python, C/C++, MATLAB, JavaScript, SQL} \\ 
+        \vspace{3pt}
+        \textbf{AI/ML:}{ PyTorch, Computer Vision, CNN, LLM, OpenCV, Feature Engineering } \\
+        \vspace{3pt}
+        \textbf{Tools:}{ Git, Docker, AWS, GCP, Qt, LaTeX } \\
+    }}
+  \resumeSubHeadingListEnd
+
+%----------- DATA PROJECTS -----------
+
+\section{Data Analysis Projects \& Research}
+  \resumeSubHeadingListStart
+    \resumeDoubleHeading
+      {Material Database Development with LLM}{Fall 2024 - Spring 2025}
+        \resumeItemListStart
+            \resumeItem{Developed pipeline to scrape DOIs and retrieve full-text papers via Elsevier and Crossref APIs}
+            \resumeItem{Benchmarked GPT-4 and Claude models for automated tabular data extraction from scientific literature}
+            \resumeItem{Implemented LaTeX conversion for precise numerical representation in extracted data}
+            \resumeItem{Designed verification system comparing extracted data with original sources, achieving 92\% accuracy}
+        \resumeItemListEnd
+        
+    \resumeDoubleHeading
+      {Scanning Track Topology Analysis of Laser Power Bed Fusion}{Spring 2024}
+        \resumeItemListStart
+            \resumeItem{Developed signal processing algorithms for analyzing scanning track continuity in additive manufacturing}
+            \resumeItem{Implemented modified A* algorithm for valley point linking to detect track separation boundaries}
+            \resumeItem{Created interactive 3D visualization using Three.js for improved data interpretation and analysis}
+            \resumeItem{Developed quantitative metrics for track quality assessment based on topology measurements}
+        \resumeItemListEnd
+    
+    \resumeDoubleHeading
+      {Cell Segmentation and Mitotic Stage Classification}{Fall 2024}
+        \resumeItemListStart
+            \resumeItem{Extracted 15+ morphological features per cell including texture, shape, and intensity metrics}
+            \resumeItem{Applied dimensionality reduction techniques to identify key features for classification}
+            \resumeItem{Built statistical models to correlate cell morphology with mitotic stage progression}
+            \resumeItem{Created end-to-end pipeline from raw microscopy images to classified cells with interactive visualization}
+        \resumeItemListEnd
+      
+    \resumeDoubleHeading
+      {Surface Analysis of Laser Power Bed Fusion}{Fall 2023 - Spring 2025}
+        \resumeItemListStart
+            \resumeItem{Automated file organization and processing to standardize video and measurement data}
+            \resumeItem{Developed correlation model between processing parameters and surface waveform features}
+            \resumeItem{Applied convolutional filters and morphological operations to enhance pattern recognition}
+            \resumeItem{Created quantitative metrics for surface quality assessment from image data}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%----------- EXPERIENCE -----------
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeDoubleHeading
+      {ASML}{Wilton, CT}
+      {Optics Metrology Production Engineer}{May 2024 \textbf{--} Aug 2024, Internship}
+        \resumeItemListStart
+            \resumeItem{Constructed data visualizer for raw spectrophotometer data with GUI using Python and MATLAB}
+            \resumeItem{Optimized measurement path for white light interferometer, reducing 86\% of stage traveling distance}
+            \resumeItem{Analyzed lithography pattern defect data to develop classification model with over 90\% accuracy}
+            \resumeItem{Quantified the effectiveness of adhesion promoters through statistical analysis of thermal stress tests}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\end{document}
